@@ -1,22 +1,14 @@
 # Real-Time Two-Speaker Toggle with ClearVoice
 
-Listen to your microphone with two overlapping voices, and toggle which
-speaker you hear, live — powered by
+PROTOTYPE -- DOMINANT VOICE AUTOLOCK
+
+Run from computer
+
 [ClearerVoice-Studio](https://github.com/modelscope/ClearerVoice-Studio)
-(`MossFormer2_SS_16K`).
 
 **Speaker A** locks onto the **loudest sustained** voice in the mix (lecture-hall
 heuristic: usually the lecturer). **Speaker B** is the other separated stream.
 You can switch A ↔ B anytime while listening.
-
-## About the model
-
-This app uses ClearVoice’s pretrained speech-separation model:
-
-- Model: `MossFormer2_SS_16K`
-- Task: `speech_separation` (fixed at 2 speakers, 16 kHz)
-- Install: `pip install clearvoice` — weights download automatically on first run
-  from HuggingFace into ClearVoice’s checkpoint cache
 
 ## Requirements
 
